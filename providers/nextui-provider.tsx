@@ -9,7 +9,13 @@ function UIProvider({ children }: { children: React.ReactNode }) {
     <NextUIProvider className="h-full w-full">
       <ThemeProvider attribute="class" enableSystem>
         {children}
-        <Toaster />
+        <Toaster
+          toastOptions={{
+            style: {
+              borderRadius: "1rem",
+            },
+          }}
+        />
       </ThemeProvider>
     </NextUIProvider>
   );
