@@ -11,6 +11,13 @@ body {
   height: 100%;
 }
 
+.react-hot-toast {
+  border-radius: 111rem;
+  background-color: hsl(
+    var(--nextui-content2) / var(--nextui-content2-opacity, 1)
+  );
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
