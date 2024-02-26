@@ -11,6 +11,7 @@ function SubscriptionButton({ isProUser }: { isProUser: boolean }) {
   const onSubscribe = async () => {
     setIsLoading(true);
     try {
+      toast.loading("Redirecting to Stripe...");
       axios.get("/api/stripe").then((response) => {
         window.location.href = response.data.url;
       });
