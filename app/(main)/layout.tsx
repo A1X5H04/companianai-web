@@ -10,7 +10,7 @@ async function MainLayout({ children }: MainLayoutProps) {
   const isProUser = await checkSubscription();
 
   return (
-    <div className="px-8">
+    <div className="px-12">
       <Navbar isProUser={isProUser} />
       <main>{children}</main>
     </div>
